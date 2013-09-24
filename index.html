@@ -1,8 +1,26 @@
 ---
 layout: default
+
+title: Home
 ---
 
 
 <h1>Home</h>
 <p>This is words on this page</p>
+
+<ul>
+	{% for page in site.pages %}
+	 {% if page.category == "dino" %}
+	<li>
+		<strong>{{page.name}}</strong>
+		{{page.content}}
+		<dl>
+			<dt>size</dt><dd>{{page.size}}</dd>
+			<dt>colour</dt><dd>{{page.colour}}</dd>
+			<dt>food</dt><dd>{{page.food}}</dd>
+		</dl>
+	</li>
+		{% endif %}
+	{% endfor %}
+</ul>
 

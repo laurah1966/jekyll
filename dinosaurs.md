@@ -1,6 +1,8 @@
 ---
 layout: defult
 
+title: Dinos
+
 ---
 
 # dinosaurs
